@@ -1,0 +1,5 @@
+permit tcp host 2001:420:50FF:C::fe range 34 67890 2001:420:50FF:D::/64 gt 54
+permit ip any any
+deny udp host 1.1.1.1 3.3.3.3 255.255.255.0 lt 65
+deny udp host ::2/64 1.1.1.1 255.255.255.0 eq 34
+deny udp host 1.1.1.1 3.3.3.3 255.255.255.0 lt 65
